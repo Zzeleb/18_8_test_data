@@ -4,13 +4,30 @@ import org.junit.jupiter.api.Test;
 import pages.ModalPage;
 import pages.RegistrationPage;
 
+import static ru.zzeleb.TestData.*;
+
 public class PracticeFormPageObjectsTests extends TestBase {
     RegistrationPage registrationPage = new RegistrationPage();
     ModalPage modalPage = new ModalPage();
 
+    /*String name = "Artem",
+     surname = "Zeleb",
+     email = "zeleb@inbox.ru",
+     gender = "Male",
+     number = "9042545658",
+     day = "16",
+     month = "October",
+     year = "1985",
+     picture = "123.jpg",
+     subject = "Maths",
+     hobby = "Reading",
+     address = "Nevskiy 5, 15",
+     state = "Haryana",
+     city = "Karnal";*/
+
     @Test
     void fillFormTest() {
-        String name = "Artem";
+     /*   String name = "Artem";
         String surname = "Zeleb";
         String email = "zeleb@inbox.ru";
         String gender = "Male";
@@ -23,7 +40,7 @@ public class PracticeFormPageObjectsTests extends TestBase {
         String hobby = "Reading";
         String address = "Nevskiy 5, 15";
         String state = "Haryana";
-        String city = "Karnal";
+        String city = "Karnal";*/
 
         registrationPage.openPage()
                 .removeBanner()
