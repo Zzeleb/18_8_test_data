@@ -9,21 +9,21 @@ import static com.codeborne.selenide.Selenide.*;
 public class RegistrationPage {
 
     private final CalendarComponent calendarComponent = new CalendarComponent();
-    private final SelenideElement firstNameInput = $("#firstName");
-    private final SelenideElement lastNameInput = $("#lastName");
-    private final SelenideElement emailInput = $("#userEmail");
-    private final SelenideElement dateOfBirthInput = $("#dateOfBirthInput");
-    private final SelenideElement genderInput = $("#genterWrapper");
-    private final SelenideElement numberInput = $("#userNumber");
-    private final SelenideElement subjectInput = $("#subjectsInput");
-    private final SelenideElement hobbyInput = $("#hobbiesWrapper");
-    private final SelenideElement userPictureUpload = $("#uploadPicture");
-    private final SelenideElement userAddressInput = $("#currentAddress");
-    private final SelenideElement stateSelect = $("#state");
-    private final SelenideElement citySelect = $("#city");
-    private final SelenideElement setUserState = $("#stateCity-wrapper");
-    private final SelenideElement setUserCity = $("#stateCity-wrapper");
-    private final SelenideElement submitButton = $("#submit");
+    private final SelenideElement firstNameInput = $("#firstName"),
+    lastNameInput = $("#lastName"),
+    emailInput = $("#userEmail"),
+    dateOfBirthInput = $("#dateOfBirthInput"),
+    genderInput = $("#genterWrapper"),
+    numberInput = $("#userNumber"),
+    subjectInput = $("#subjectsInput"),
+    hobbyInput = $("#hobbiesWrapper"),
+    userPictureUpload = $("#uploadPicture"),
+    userAddressInput = $("#currentAddress"),
+    stateSelect = $("#state"),
+    citySelect = $("#city"),
+    setUserState = $("#stateCity-wrapper"),
+    setUserCity = $("#stateCity-wrapper"),
+    submitButton = $("#submit");
 
     public RegistrationPage openPage() {
         open("/automation-practice-form");
