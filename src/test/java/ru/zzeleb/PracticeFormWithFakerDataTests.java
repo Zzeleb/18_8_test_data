@@ -3,7 +3,10 @@ package ru.zzeleb;
 import org.junit.jupiter.api.Test;
 import pages.ModalPage;
 import pages.RegistrationPage;
-import static ru.zzeleb.TestData.*;
+
+
+import static utils.RandomStudent.*;
+
 
 public class PracticeFormWithFakerDataTests extends TestBase {
     RegistrationPage registrationPage = new RegistrationPage();
@@ -11,6 +14,20 @@ public class PracticeFormWithFakerDataTests extends TestBase {
 
     @Test
     void fillFormTest() {
+        String name = getRandomFirstName();
+        String surname = getRandomLastName();
+        String email = getRandomEmail();
+        String gender = getRandomGender();
+        String number = getRandomMobile();
+        String day = getRandomDay();
+        String month = getRandomMonth();
+        String year = getRandomYear();
+        String picture = getRandomFile();
+        String subject = getRandomSubject();
+        String hobby = getRandomHobby();
+        String address = getRandomAddress();
+        String state = getRandomState();
+        String city = getRandomCity();
 
         registrationPage.openPage()
                 .removeBanner()
