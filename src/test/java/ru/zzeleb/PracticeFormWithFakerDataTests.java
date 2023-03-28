@@ -3,31 +3,30 @@ package ru.zzeleb;
 import org.junit.jupiter.api.Test;
 import pages.ModalPage;
 import pages.RegistrationPage;
-
-
-import static utils.RandomStudent.*;
+import utils.RandomStudent;
 
 
 public class PracticeFormWithFakerDataTests extends TestBase {
     RegistrationPage registrationPage = new RegistrationPage();
     ModalPage modalPage = new ModalPage();
+    RandomStudent randomStudent = new RandomStudent();
 
     @Test
     void fillFormTest() {
-        String name = getRandomFirstName();
-        String surname = getRandomLastName();
-        String email = getRandomEmail();
-        String gender = getRandomGender();
-        String number = getRandomMobile();
-        String day = getRandomDay();
-        String month = getRandomMonth();
-        String year = getRandomYear();
-        String picture = getRandomFile();
-        String subject = getRandomSubject();
-        String hobby = getRandomHobby();
-        String address = getRandomAddress();
-        String state = getRandomState();
-        String city = getRandomCity();
+        String name = RandomStudent.getRandomFirstName();
+        String surname = RandomStudent.getRandomLastName();
+        String email = RandomStudent.getRandomEmail();
+        String gender = RandomStudent.getRandomGender();
+        String number = RandomStudent.getRandomMobile();
+        String day = RandomStudent.getRandomDay();
+        String month = RandomStudent.getRandomMonth();
+        String year = RandomStudent.getRandomYear();
+        String picture = RandomStudent.getRandomFile();
+        String subject = RandomStudent.getRandomSubject();
+        String hobby = RandomStudent.getRandomHobby();
+        String address = RandomStudent.getRandomAddress();
+        String state = RandomStudent.getRandomState();
+        String city = RandomStudent.getRandomCity();
 
         registrationPage.openPage()
                 .removeBanner()
